@@ -1,0 +1,60 @@
+.dev{
+	font-size: 30px;
+	color: aliceblue;
+	width: 400px;
+	margin-bottom: 900px;
+}
+
+.Img{
+ 
+	margin-top: 10px;
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/246/462/453/laptop-macbook-iphone-apple-wallpaper-preview.jpg");
+	background-position: center;
+    background-size: cover;
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+	
+}
+
+
+body {
+	background-color: aqua;
+	
+}
+.heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: var(--box-shadow);
+	margin: 10px;
+	background-color: rgb(244, 241, 241);
+	border-radius: 4px;
+}
+
+.title_tab {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--black);
+	flex: 2;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.genre_tab {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--black);
+	flex: 1;
+}
+
+.rating_tab {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--black);
+	flex: 1;
+}
