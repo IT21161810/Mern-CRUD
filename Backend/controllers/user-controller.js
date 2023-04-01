@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const JWT_SECRET_KEY = "MyKey";
 
-///////////////
+//user controller for signup
 
 const signup = async(req,res,next) => {
 
@@ -39,9 +39,8 @@ const signup = async(req,res,next) => {
 }
 
 
-////////////////
 
-
+//usr login function
 const login = async (req,res,next) => {
 
     const {email,password} = req.body;
