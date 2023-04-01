@@ -6,6 +6,7 @@ const cookieParser  = require('cookie-parser');
 const cors = require('cors');
 require('dotenv').config();
 const app = express();
+const DB = process.env.MONGO_URL
 
 app.use(cors({ credentials: true,origin:"http://localhost:3000" }));
 app.use(cookieParser()); 
@@ -16,7 +17,7 @@ app.use("/api",router);
 app.use("/books",bookrouter);
 
 mongoose.set('strictQuery', true);
-mongoose.connect("mongodb+srv://Viraj:N0TMOAn9hZzYtCUt@cluster0.ssbpou4.mongodb.net/Auth_DB?retryWrites=true&w=majority").then( () => {
+mongoose.connect(DB).then( () => {
      
       app.listen(5000);
       console.log("Connected to DataBase");
