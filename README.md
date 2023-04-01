@@ -1,2 +1,0 @@
-# Mern-CRUD
-React application
